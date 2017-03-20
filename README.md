@@ -7,14 +7,14 @@ For more information on [Vidyo.io](http://vidyo.io) see the [Developer](https://
 ## Getting Started
 
 1. Download this sample from the git repository
-  - `git clone https://github.com/Vidyo/gae-simple-room.git`
+   * `git clone https://github.com/Vidyo/gae-simple-room.git`
 1. Grab your **Developer Key** and **Appliation ID** from [Vidyo.io](http://vidyo.io)
-  - See **API Key** section in the [Dashboard](https://developer.vidyo.io/dashboard).
+   * See **API Key** section in the [Dashboard](https://developer.vidyo.io/dashboard).
 1. Modify the `main.py` to add your [Vidyo.io](http://vidyo.io) credentials
-  - Change the value of `VIDYO_IO_DEVELOPER_KEY` to your **Developer Key**
-  - Change the value of `VIDYO_IO_APPLICATION_ID` to your **Appliation ID**
+   * Change the value of `VIDYO_IO_DEVELOPER_KEY` to your **Developer Key**
+   * Change the value of `VIDYO_IO_APPLICATION_ID` to your **Appliation ID**
 1. Run the App
-  - See Google App Engine [Tutorials](https://cloud.google.com/appengine/docs/python/tutorials) and a similar [Guestbook](https://cloud.google.com/appengine/docs/python/getting-started/creating-guestbook) example for more info.
+   * See Google App Engine [Tutorials](https://cloud.google.com/appengine/docs/python/tutorials) and a similar [Guestbook](https://cloud.google.com/appengine/docs/python/getting-started/creating-guestbook) example for more info.
 
 ## Application Details
 
