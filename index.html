@@ -22,6 +22,16 @@
 	</head>
 	<body>
 		<img class="logo" src="https://static.vidyo.io/latest/connector/Images/VidyoIcon.png"/>
+		{% if roomId %}
+		<h1>What is your name?</h1>
+		<form onsubmit="return joinRoom()">
+			<input type="text" name="display_name" id="display_name" placeholder="your name">
+			<br />
+			<input type="hidden" name="room_name" id="room_name" value="{{ roomId }}">
+			<br />
+			<input type="submit" value="join">
+		</form>
+		{% else %}
 		<h1>What room would you like to join?</h1>
 		<form onsubmit="return joinRoom()">
 			<input type="text" name="display_name" id="display_name" placeholder="your name">
@@ -30,6 +40,7 @@
 			<br />
 			<input type="submit" value="join">
 		</form>
+		{% endif %}
 	</body>
 </html>
 {% endautoescape %}

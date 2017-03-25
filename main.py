@@ -77,6 +77,16 @@ class MainPage(webapp2.RequestHandler):
 class Room(webapp2.RequestHandler):
 
 	def get(self, roomId):
+		# Check if the roomId is set, but not the displayName
+		if (not self.request.get('displayName')):
+			# Show display name dialog
+			template_values = {
+				'roomId': roomId,
+			}
+			template = JINJA_ENVIRONMENT.get_template('index.html')
+			self.response.write(template.render(template_values))
+			return;
+		
 		# RoomID must not have spaces or special characters. Base64 encode will ensure that.
 		roomIdBase64AndEncoded = urllib2.quote(base64.b64encode(roomId))
 		# Pick the VidyoIO client version or select latest
