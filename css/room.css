@@ -36,27 +36,29 @@ h1 {
 }
 
 input {
-	font-size:       18px;
-	text-align:      center;
-	text-decoration: none;
-	display:         inline-block;
-	padding:         14px 0px 14px 0px;
-	margin-bottom:   10px;
-	width:           300px;
-	border-radius:   5px;
+	text-align:         center;
+	text-decoration:    none;
+	display:            inline-block;
+	padding:            14px 0px 14px 0px;
+	margin-bottom:      10px;
+	border-radius:      5px;
 	-webkit-appearance: none;
 }
 
 input[type=text] {
-    border:   1px solid #ccc;
+	font-size: 18px;
+	width:     300px;
+	border:    1px solid #ccc;
 }
 
 input[type=submit] {
-    border:           0; 
+	font-size:        15px;
+	width:            149px;
+	border:           0;
 	background-color: #83C36D;
 	color:            white;
 }
 
 .logo {
-	width:       300px;
+	width: 300px;
 }

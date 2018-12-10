@@ -95,7 +95,7 @@ class Room(webapp2.RequestHandler):
 		username = ''.join(random.choice('0123456789ABCDEF') for i in range(16))
 		
 		encoded_token = getVidyoIOToken(username)
-		url_vidyoio = "https://static.vidyo.io/" + version + "/connector/VidyoConnector.html?host=prod.vidyo.io&autoJoin=1&resourceId=" + roomIdBase64AndEncoded + "&token=" + encoded_token + "&hideConfig=1&" + self.request.query_string
+		url_vidyoio = "https://static.vidyo.io/" + version + "/connector/VidyoConnector.html?host=prod.vidyo.io&autoJoin=1&resourceId=" + roomIdBase64AndEncoded + "&token=" + encoded_token + "&hideConfig=0&" + self.request.query_string
 		template_values = {
 			'url_vidyoio': url_vidyoio,
 		}
