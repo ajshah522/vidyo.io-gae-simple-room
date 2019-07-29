@@ -7,7 +7,7 @@ For more information on [Vidyo.io](http://vidyo.io) see the [Developer](https://
 ## Getting Started
 
 1. Download this sample from the git repository
-   * `git clone https://github.com/Vidyo/gae-simple-room.git`
+   * `git clone https://github.com/Vidyo/vidyo.io-gae-simple-room.git`
 1. Grab your **Developer Key** and **Appliation ID** from [Vidyo.io](http://vidyo.io)
    * See **API Key** section in the [Dashboard](https://developer.vidyo.io/dashboard).
 1. Modify the `main.py` to add your [Vidyo.io](http://vidyo.io) credentials
